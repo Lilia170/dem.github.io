@@ -17,8 +17,8 @@
    <h2>8 апреля</h2>
    <a href="pac.png">проект</a>. 
    
-<h2>1 апреля<h2>
-   <p>Итоговые результаты: 
+  <h2>1 апреля<h2>
+   <p> Итоговые результаты: 
 Ошибка на обучении (MSE): 0.004437746331391746
 Ошибка на тесте (MSE): 0.004026784748156406
 Примеры прогнозов (реальные оценки):
@@ -148,3 +148,46 @@ clogs: 0.15%
 
 </body>
 </html> 
+      <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Кроссворд: Системы счисления</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1> Кроссворд: Системы счисления</h1>
+    <p>Решите задания и впишите ответы в сетку!</p>
+  </header>
+
+  <main>
+    <section class="clues">
+      <h2>По горизонтали:</h2>
+      <ul id="horizontal-clues">
+        <!-- Заполняется через JS -->
+      </ul>
+    </section>
+
+    <section class="grid-container">
+      <div id="crossword-grid"></div>
+    </section>
+
+    <section class="controls">
+      <button onclick="checkAnswers()">Проверить ответы</button>
+      <button onclick="showAnswers()">Показать ответы</button>
+      <button onclick="resetGrid()">Очистить</button>
+    </section>
+
+    <div id="feedback" class="feedback"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 | Создано для обучения информатике</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
